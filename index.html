@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Simples</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #5a67d8;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #5a67d8;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #434190;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML -->
+  <h1>Bem-vindo ao meu site!</h1>
+  <p>Este é um exemplo simples de HTML, CSS e JavaScript.</p>
+  <button id="changeTextButton">Clique aqui</button>
+  <div id="message"></div>
+
+  <script>
+    // JavaScript
+    document.getElementById("changeTextButton").addEventListener("click", function () {
+      const messageDiv = document.getElementById("message");
+      messageDiv.textContent = "Você clicou no botão! 🎉";
+    });
+  </script>
+</body>
+</html>
